@@ -19,7 +19,7 @@ const reducers = combineReducers({
 
 // render an instance of the component in the DOM
 ReactDOM.render(
-  <Provider store={createStore(reducers)}>
+  <Provider store={createStore(reducers, { activeCity: { name: "Paris", address: "16 Villa Gaudelet, 75011 Paris", slug: "paris" } })}>
     <App />
   </Provider>,
   document.getElementById('root')
